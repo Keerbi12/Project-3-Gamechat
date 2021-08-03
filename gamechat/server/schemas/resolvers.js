@@ -1,9 +1,9 @@
-const { User } = require('../models');
+const { Game } = require('../models');
 
 const resolvers = {
     Query: {
-        getUser() {
-            return User.find({});
+        getGame() {
+            return Game.find({});
         }, 
     },
 };

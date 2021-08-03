@@ -1,13 +1,12 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-    type User {
+    type Game {
         name: String! 
-        age: Int!
     }
 
-    type Queries {
-        getUser: [User]
+    type Query {
+        getGame: [Game]
     }
 
     
